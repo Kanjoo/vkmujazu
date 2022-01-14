@@ -131,16 +131,23 @@ section dd {
 .ena p {
   color: var(--neut4-raisin_black);
   text-align: center;
-  padding: 0.5rem 1rem;
   font-family: "Bodoni Moda", serif;
   font-weight: 700;
+  font-size: 0.8rem;
   margin: 0;
 }
 
 .ena {
-  padding: 0.3rem 0;
+  margin: 0;
+  padding: 0.5rem 0;
   grid-column-start: 1;
   grid-row-start: 1;
+}
+
+hr {
+  width: 50%;
+  height: 1px;
+  background-color: var(--feminine_earth1);
 }
 
 .container {
@@ -185,7 +192,8 @@ section dd {
   float: left;
 }
 
-footer {
+footer { 
+  height: 8vh;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -195,11 +203,11 @@ footer {
   padding: 0;
   background-color: var(--neut1-cultured);
   font-family: "Poiret One", cursive;
-  font-weight: 300;
-  grid-area: footer;
+  font-weight: 300;  
 }
 #stamp {
   vertical-align: bottom;
+  margin: 0;
 }
 
 /*Firefox*/
