@@ -107,10 +107,6 @@ h2 {
   font-weight: bold;
 }
 
-section dl {
-  margin: 0;
-}
-
 dt {
   color: var(--sec3-terracota_mud);
   font-weight: bold;
@@ -126,7 +122,10 @@ section {
   margin: 0;
   text-align: center;
   color: var(--dark1-blue_black_blue);
-  padding-right: 2rem;
+}
+
+section dd {
+  font-size: 0.8rem;
 }
 
 .ena p {
@@ -192,7 +191,7 @@ footer {
   left: 0;
   right: 0;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: var(--neut1-cultured);
   font-family: "Poiret One", cursive;
