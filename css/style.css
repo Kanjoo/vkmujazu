@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,500;1,600;1,700&family=Poppins:wght@300;400&display=swap");
+
+:root {
+  --prime1-moss_green: #859b6f;
+  --prime2-terra_pink: #ffb3b3;
+  --prime3-shadow_blue: #7480a4;
+  --bright1-blazing_yellow: #fee715;
+  --bright2-bright_Red: #e10600;
+  --bright3-vivid_blue: #2657ff;
+  --bright4-gold: #ffd700;
+  --dark1-blue_black_blue: #101820;
+  --dark2-dark_jungle_green: #151f21;
+  --sec1-forest_green: #002f06;
+  --sec2-earth_red: #660000;
+  --sec3-terracota_mud: #ac3931;
+  --neut1-cultured: #f6f8f7;
+  --neut2-white: #ffffff;
+  --neut3-rocket_metallic: #7d777b;
+  --neut4-raisin_black: #292327;
+  --neut5-rich_black_FOGRA39: #0c0c0c;
+  --auto-grid: auto;
+
+  --feminine_concrete: #d2d1cd;
+  --feminine_navy: #000042;
+  --feminine_earth: #da746f;
+  --feminine_earth1: #3f5253;
+  --feminine_earth2: #94a1a0;
+  --feminine_earth3: #f7f5f2;
+  --feminine_earth4: #ead7cd;
+  --feminine_topiary: #8e9655;
+}
+
+/*================================== Core Styles ===================================*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/**This will give you the same result, and make it easier to change the box-sizing in plugins or other components that leverage other behavior. source: CSS TRICKS*/
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
+  font-weight: 700;
+  max-width: 960px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+aside {
+  background-color: var(--feminine_earth);
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 45px;
+  width: 100%;
+  max-width: 960px;
+  height: 61.5vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid), 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(var(--auto-grid), 1fr));
+  grid-area: sidebar;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  background-color: var(--neut4-raisin_black);
+  color: var(--sec3-terracota_mud);
+  padding: 1rem 0;
+  margin: 0;
+  font-weight: 700;
+  writing-mode: vertical-rl;
+  text-align: center;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+h2 {
+  background-color: var(--neut4-raisin_black);
+  color: var(--sec3-terracota_mud);
+  font-size: 1.5rem;
+  letter-spacing: 0.02rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+.ovita dt {
+  color: var(--sec3-terracota_mud);
+  font-weight: bold;
+}
+
+section dl {
+  margin: 0;
+}
+
+dt {
+  color: var(--sec3-terracota_mud);
+  font-weight: bold;
+}
+
+dd {
+  background: none no-repeat left top;
+  padding-left: 0px;
+  margin-bottom: 5px;
+}
+
+section {
+  margin: 0;
+  text-align: center;
+  color: var(--dark1-blue_black_blue);
+  padding-right: 2rem;
+}
+
+.ena p {
+  color: var(--neut4-raisin_black);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ena {
+  padding: 0.3rem 0;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.container {
+  color: var(--neut4-raisin_black);
+  font-size: 1rem;
+  padding: 0.5rem;
+  line-height: 1.6;
+  margin: 0.7rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.header-img {
+  width: 60vw;
+  max-width: 730px;
+  border: 0px solid var(--feminine_earth);
+  margin: 0;
+}
+
+.omunaa-img {
+  width: 25vw;
+  max-width: 230px;
+  border-radius: 35%;
+  shape-outside: url(/images/veroo3.jpeg);
+  float: right;
+}
+
+.ovita-img {
+  width: min-content;
+  padding: 7px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.ozombara-img {
+  width: 30vw;
+  max-width: 230px;
+  padding-right: 7px;
+  float: left;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--neut1-cultured);
+  font-family: "Poiret One", cursive;
+  font-weight: 300;
+  grid-area: footer;
+}
+#stamp {
+  vertical-align: bottom;
+}
+
+/*Firefox*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--neut4-raisin_black) var(--sec3-terracota_mud);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: var(--sec3-terracota_mud);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neut4-raisin_black);
+  border-radius: 10px;
+}
