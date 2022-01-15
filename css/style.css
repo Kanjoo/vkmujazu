@@ -72,25 +72,10 @@ aside {
   max-width: 960px;
   height: 40vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid), 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(var(--auto-grid), 1fr));
-  grid-area: sidebar;
+
   margin: auto;
   left: 0;
   right: 0;
-}
-
-h3 {
-  background-color: var(--neut4-raisin_black);
-  color: var(--sec3-terracota_mud);
-  padding: 1rem 0;
-  margin: 0;
-  font-weight: 700;
-  writing-mode: vertical-rl;
-  text-align: center;
-  grid-column-start: 2;
-  grid-row-start: 1;
-  grid-row-end: span 2;
 }
 
 h2 {
@@ -121,9 +106,9 @@ dd {
 section {
   font-size: 0.8rem;
   margin: 0;
+  padding-right: 5px;
   text-align: center;
 }
-
 
 .container p {
   color: var(--neut4-raisin_black);
@@ -152,9 +137,8 @@ hr {
 }
 
 .header-img {
-  width: 60vw;
+  width: 45vw;
   max-width: 730px;
-  border: 0px solid var(--feminine_earth);
   margin: 0;
 }
 
