@@ -67,10 +67,10 @@ aside {
   background-color: var(--feminine_earth);
   font-family: "Poppins", sans-serif;
   position: absolute;
-  bottom: 35px;
+  bottom: 25px;
   width: 100%;
   max-width: 960px;
-  height: 50vh;
+  height: 40vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid), 1fr));
   grid-template-rows: repeat(auto-fill, minmax(var(--auto-grid), 1fr));
