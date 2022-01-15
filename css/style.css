@@ -67,10 +67,10 @@ aside {
   background-color: var(--feminine_earth);
   font-family: "Poppins", sans-serif;
   position: absolute;
-  bottom: 45px;
+  bottom: 35px;
   width: 100%;
   max-width: 960px;
-  height: 55vh;
+  height: 50vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid), 1fr));
   grid-template-rows: repeat(auto-fill, minmax(var(--auto-grid), 1fr));
@@ -80,7 +80,7 @@ aside {
   right: 0;
 }
 
-h1 {
+h3 {
   background-color: var(--neut4-raisin_black);
   color: var(--sec3-terracota_mud);
   padding: 1rem 0;
@@ -115,33 +115,23 @@ dt {
 dd {
   background: none no-repeat left top;
   padding-left: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 section {
+  font-size: 0.8rem;
   margin: 0;
   text-align: center;
-  color: var(--dark1-blue_black_blue);
 }
 
-section dd {
-  font-size: 0.8rem;
-}
 
-.ena p {
+.container p {
   color: var(--neut4-raisin_black);
   text-align: center;
   font-family: "Bodoni Moda", serif;
   font-weight: 700;
   font-size: 0.8rem;
   margin: 0;
-}
-
-.ena {
-  margin: 0;
-  padding: 0.5rem 0;
-  grid-column-start: 1;
-  grid-row-start: 1;
 }
 
 hr {
@@ -151,12 +141,11 @@ hr {
 }
 
 .container {
-  color: var(--neut4-raisin_black);
-  font-size: 1rem;
-  padding: 0.5rem;
-  line-height: 1.6;
-  margin: 0.7rem;
-  overflow: hidden;
+  color: var(--neut4-raisin_black);  
+  padding: 0.3rem;
+  line-height: 1.4;
+  margin: 0.5rem;
+  overflow: none;
   overflow-y: scroll;
   grid-column-start: 1;
   grid-row-start: 2;
