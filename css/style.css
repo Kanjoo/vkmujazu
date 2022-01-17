@@ -175,13 +175,13 @@ dd {
 }
 
 footer { 
+  height: 8vh;
   position: relative;  
+  margin: 0 auto;
   left: 0;
   right: 0;
-  text-align: center;
-  margin: 0 auto;
   padding: 0.5rem;
-  height: 8vh;
+  text-align: center;
   background-color: var(--neut1-cultured);
   font-family: "Poiret One", cursive;
   font-weight: 300;  
