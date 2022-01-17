@@ -44,110 +44,119 @@ body {
 
 /**This will give you the same result, and make it easier to change the box-sizing in plugins or other components that leverage other behavior. source: CSS TRICKS*/
 
+.primary-container {
+  margin: 0 auto -8vh;
+}
+
 header {
   width: 100%;
+  background-color: var(--neut4-raisin_black);
+  color: var(--sec3-terracota_mud);
+  padding: 0.1rem; 
   text-align: center;
 }
 
-.bubble {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  font-family: "Bodoni Moda", serif;
-  font-style: italic;
-  font-weight: 700;
+h2 {
+  font: "Poppins", sans-serif;
+  letter-spacing: 0.02rem;
+  margin-bottom: 0;
+}
+
+header p {
+  text-align: end;
+  padding-right: 1rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.bubble {   
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0;
   left: 0;
   right: 0;
 }
 
-aside {
+section {
+  background: linear-gradient(#ac3931 70%, #fff 30%);  
+  font-family: "Bodoni Moda", serif;
+  font-style: oblique;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+  text-align: center;
+  padding: 0.5rem 1.5rem 0 1.5rem; 
+  margin-bottom: 0;
+}
+
+aside { 
+  font-family: "Bodoni Moda", serif; 
+  padding: 0.5rem 3rem;
+}
+
+aside dd {
+  display: inline;
+  margin: 0;
+}
+aside dd::after {
+  display: block;
+  content: '';
+}
+
+aside dt {
+  display: inline-block;
+  min-width: 7rem;
+}
+
+aside dt::after {
+  content: " : ";
+}
+
+article {
   background-color: var(--feminine_earth);
   font-family: "Poppins", sans-serif;
-  position: absolute;
-  bottom: 25px;
   width: 100%;
   max-width: 960px;
-  height: 55vh;
-  display: grid;
-
   margin: auto;
   left: 0;
   right: 0;
 }
 
-h2 {
-  background-color: var(--neut4-raisin_black);
-  color: var(--sec3-terracota_mud);
-  font-size: 1.5rem;
-  letter-spacing: 0.02rem;
-  padding: 1rem;
-  margin: 0;
+h3 {
+  background-color: var(--sec3-terracota_mud);
+  text-align: center;
+  padding: 0.5rem;
 }
 
-.ovita dt {
+dl > dt {
   color: var(--sec3-terracota_mud);
   font-weight: bold;
-}
-
-dt {
-  color: var(--sec3-terracota_mud);
-  font-weight: bold;
+  font-style: oblique;
 }
 
 dd {
-  background: none no-repeat left top;
-  padding-left: 0px;
-  margin-bottom: 3px;
-}
-
-section {
-  font-size: 0.8rem;
-  margin: 0;
-  padding-right: 5px;
-  text-align: center;
-}
-
-.container p {
-  color: var(--neut4-raisin_black);
-  text-align: center;
-  font-family: "Bodoni Moda", serif;
-  font-weight: 700;
-  font-size: 0.8rem;
-  margin: 0;
-}
-
-hr {
-  width: 50%;
-  height: 1px;
-  background-color: var(--feminine_earth1);
+  margin-bottom: 1rem;
 }
 
 .container {
   color: var(--neut4-raisin_black);  
-  padding: 0.3rem;
+  padding: 0.05rem 1rem;
   line-height: 1.4;
-  margin: 0.5rem;
   overflow: none;
   overflow-y: scroll;
-  grid-column-start: 1;
-  grid-row-start: 2;
 }
 
 .header-img {
-  width: 50vw;
+  width: 60vw;
   max-width: 730px;
   margin: 0;
 }
 
 .omunaa-img {
-  width: 25vw;
+  width: 20vw;
   max-width: 230px;
   border-radius: 35%;
   shape-outside: url(/images/veroo3.jpeg);
   float: right;
+  margin: 0;
 }
 
 .ovita-img {
@@ -159,21 +168,20 @@ hr {
 }
 
 .ozombara-img {
-  width: 30vw;
+  width: 35vw;
   max-width: 230px;
   padding-right: 7px;
   float: left;
 }
 
 footer { 
-  height: 8vh;
-  position: fixed;
-  bottom: 0;
+  position: relative;  
   left: 0;
   right: 0;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
+  padding: 0.5rem;
+  height: 8vh;
   background-color: var(--neut1-cultured);
   font-family: "Poiret One", cursive;
   font-weight: 300;  
